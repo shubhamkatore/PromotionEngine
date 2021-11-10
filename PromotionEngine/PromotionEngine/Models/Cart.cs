@@ -6,11 +6,9 @@ namespace PromotionEngine.Models
     {
         public List<CartItem> Items { get; set; }
         public int Amount { get; set; }
-
-        public Cart(List<CartItem> items, int amount)
+        public Cart(List<CartItem> items)
         {
             Items = items;
-            Amount = amount;
         }
     }
 }
