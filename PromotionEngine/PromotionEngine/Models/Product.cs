@@ -1,14 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace PromotionEngine.Models
+﻿namespace PromotionEngine.Models
 {
     public class Product
     {
         public string Sku { get; set; }
         public int Price { get; set; }
+
+        public Product(string sku,int price)
+        {
+            Sku = sku;
+            Price = price;
+        }
     }
 }

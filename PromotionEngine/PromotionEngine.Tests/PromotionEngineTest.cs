@@ -1,8 +1,13 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace PromotionEngine.Tests
 {
-    public class Tests
+    public class PromotionEngineTest
     {
         [SetUp]
         public void Setup()
