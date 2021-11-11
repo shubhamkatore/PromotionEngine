@@ -52,7 +52,7 @@ namespace PromotionEngine.Tests
                         productList["C"],
                         productList["D"]
                     },
-                    Price=120
+                    Price=30
                 }
             };
             PromotionEngine = new PromotionEngine(products,promotions);
@@ -69,7 +69,7 @@ namespace PromotionEngine.Tests
             };
             Cart Cart = new Cart(CartItems);
             PromotionEngine.CheckOut(Cart);
-            Assert.AreEqual(Cart.Amount, 100);
+            Assert.AreEqual(100,Cart.Amount);
         }
 
         [Test]
@@ -83,7 +83,7 @@ namespace PromotionEngine.Tests
             };
             Cart Cart = new Cart(CartItems);
             PromotionEngine.CheckOut(Cart);
-            Assert.AreEqual(Cart.Amount, 370);
+            Assert.AreEqual(370,Cart.Amount);
         }
 
         [Test]
@@ -98,7 +98,7 @@ namespace PromotionEngine.Tests
             };
             Cart Cart = new Cart(CartItems);
             PromotionEngine.CheckOut(Cart);
-            Assert.AreEqual(Cart.Amount, 280);
+            Assert.AreEqual(280,Cart.Amount);
         }
     }
 }
