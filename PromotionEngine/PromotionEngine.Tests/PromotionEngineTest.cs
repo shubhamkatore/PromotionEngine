@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using PromotionEngine.Enums;
+using PromotionEngine.Interfaces;
 using PromotionEngine.Models;
 using System.Collections.Generic;
 
@@ -7,7 +8,7 @@ namespace PromotionEngine.Tests
 {
     public class PromotionEngineTest
     {
-        PromotionEngine PromotionEngine;
+        IPromotionEngine PromotionEngine;
         Dictionary<string, Product> productList = new Dictionary<string, Product>
         {
             {"A", new Product("A",50)},
