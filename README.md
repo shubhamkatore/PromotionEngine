@@ -2,7 +2,7 @@
 
 Tech Stack : .Net Core 5
 
-Solution Structure
+	Solution Structure 
 	PromotionEngine (Project)
 		Enums =======> All enums
 		Interfaces ==> All Interfaces
